@@ -100,9 +100,6 @@ class TestResult(Base):
 
     tested_at = Column(DateTime(timezone=True), nullable=False)
 
-    jig_id = Column(String(50))
-
-    operator_id = Column(String(50))
 
     value_numeric = Column(Numeric)
 
