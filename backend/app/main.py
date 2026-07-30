@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from app.routers import models, parameters, upload, results
 from fastapi.middleware.cors import CORSMiddleware
+from app.database import engine
+from app import models as db_models
 
 app = FastAPI()
+
+db_models.Base.metadata.create_all(bind=engine)
 
 app.add_middleware(
     CORSMiddleware,
