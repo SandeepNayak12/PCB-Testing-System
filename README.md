@@ -106,7 +106,7 @@ with your PostgreSQL credentials.
 ## 5. Start the backend
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload --host 0.0.0.0
 ```
 
 The backend will run at:
