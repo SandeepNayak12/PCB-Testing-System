@@ -7,7 +7,6 @@ import {
   Toolbar,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import DashboardIcon from "@mui/icons-material/Dashboard";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import TuneIcon from "@mui/icons-material/Tune";
@@ -30,13 +29,6 @@ function Sidebar() {
       <Toolbar />
 
       <List>
-        <ListItemButton component={Link} to="/">
-          <ListItemIcon>
-            <DashboardIcon />
-          </ListItemIcon>
-          <ListItemText primary="Dashboard" />
-        </ListItemButton>
-
         <ListItemButton component={Link} to="/models">
           <ListItemIcon>
             <InventoryIcon />

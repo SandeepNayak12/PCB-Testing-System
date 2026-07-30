@@ -5,7 +5,6 @@ import { lightTheme, darkTheme } from "./theme";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
-import Dashboard from "./pages/Dashboard";
 import Models from "./pages/Models";
 import Parameters from "./pages/Parameters";
 import Results from "./pages/Results";
@@ -35,7 +34,7 @@ function App() {
             }}
           >
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/" element={<Models />} />
               <Route path="/models" element={<Models />} />
               <Route path="/parameters" element={<Parameters />} />
               <Route path="/results" element={<Results />} />
